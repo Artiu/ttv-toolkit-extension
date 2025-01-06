@@ -1,0 +1,14 @@
+{
+	"{{chrome}}.manifest_version": 3,
+	"{{firefox}}.manifest_version": 2,
+	"name": "TTV Toolkit",
+	"version": "1.0.0",
+	"description": "Modern toolkit for Twitch.tv",
+	"content_scripts": [
+		{
+			"js": ["content-script.ts"],
+			"matches": ["https://*.twitch.tv/*"],
+			"all_frames": true
+		}
+	]
+}
